@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-image: url(4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.head{
+    background-color: black;
+}
+
+.p{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin:10px;
+}
+.p h3{
+    position: relative;
+    top: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    animation: p 2s ease-in-out;
+
+    
+}
+@keyframes p{
+    0%{
+        transform: translateY(-100%);
+    }
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: white;   
+}
+ul li{
+    margin:10px;
+    cursor: pointer;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: crimson;
+    margin-left: 30px;
+    font-size: 20px;
+animation: li 2s ease-in-out;
+}
+@keyframes li{
+    0%{
+        transform: translateY(-100%);
+    }
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+}
+li:hover{
+   
+    background: transparent;
+    background-color: rgba(216, 15, 139, 0.7);
+    transform: translateX(10px);
+    border-color: blueviolet;
+   
+}
+.menu-line{
+    height: 3px;
+    width: 20px;
+    background-color:rgb(248, 248, 248);
+    margin-bottom: 5px;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.home{
+    margin-top:60px;
+   
+
+}
+.home h1{
+    color: darkorange;
+    font-size: 50px;
+    margin-left: 20px;
+
+    
+}
+.home h1 span{
+    color: red;
+}
+.peru{
+    margin-left: 60px;
+    margin-top: 5%;
+    color: white;
+}
+.p h3 span{
+    color: yellow;
+}
+.peru h3{
+    font-size: 80px;
+    letter-spacing:5px;
+}
+.d{
+
+    padding-top: 10px;
+
+}
+.d h1{
+    margin-left: 250px;
+    font-size: 50px;
+    color: #F8DE22;
+}
+.d h3{
+ margin-left: 60px;
+    font-size: 50px;
+    letter-spacing:5px;
+    color: white;
+}
+.d h2{
+    margin-left: 150px;
+    margin-top: 10px;
+    font-size: 45px;
+    letter-spacing:5px;
+    color:red;
+    position: relative;
+    left:150px;
+}
+.img img{
+    position: absolute;
+   bottom:50px;
+   width: 500px;
+   height: 500px;
+   right: 10%;
+   
+}
+.your-picture{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 20%;
+    left: 60%;
+   border-color: #F8DE22;
+   border: 2px solid;
+   box-shadow:#7d2ae8;
+   
+
+}
+button{
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 6px;
+    background: #e22ae8;
+    transition: all 0.2s ease;
+    position: absolute;
+    left: 64.5%;
+    
+
+}
+button a{
+text-decoration: none;  
+color: white; 
+font-size: 20px; 
+}
+button:active{
+    transform: scale(0.96);
+}
+
+@media all and (max-width:640px){
+    body{
+        background-image: url(uni.jpg);
+    }
+
+    .nav{
+       
+        display: block;
+     
+    }
+    .ul li{
+    
+        text-align: center;
+        font-size: 10px;
+        position: relative;
+        right:150%;
+        top: 40px;
+        display: none;
+        
+    }
+    ul{
+        display: none;
+        text-align: center;
+        padding: 0px;
+        position: relative;
+        right: 200px;
+      
+    }
+    .menu{
+        display: block;
+        position:absolute;
+        right: 60px;
+        top: 20px;
+    
+    }
+
+    .showmenu{
+        display: block;
+    }
+    .p h3{
+      text-align: center;
+        margin: 10px 0px 0px 30px;
+        font-size: 20px;
+        position: relative;
+        right: 10px;
+        text-shadow:10px;
+        color: rgb(255, 255, 255);
+        
+        
+    
+    }
+    .p h3 span{
+        color: yellow;
+    }
+
+    .home{
+        margin-top:10px;
+       
+    
+    }
+    .home h1{
+        color: #B6FFFA;
+        font-size: 40px;
+        margin-left: 20px;
+        text-align: center;
+    
+        
+    }
+    .home h1 span{
+        color: #80B3FF;
+    }
+    .peru{
+        margin-left: 40px;
+        margin-top: 5%;
+        color:greenyellow;
+    }
+    .peru h3{
+        font-size: 30px;
+        letter-spacing:5px;
+        text-align: center;
+    }
+    
+    .d{
+    
+        padding-top: 10px;
+    
+    }
+    .d h1{
+        margin-left: 9px;
+        font-size: 26px;
+        color: #f7f7f7;
+        text-align: center;
+        position: relative;
+        top: 30px;
+    }
+    .d h3{
+     margin-left: 60px;
+        font-size: 30px;
+        letter-spacing:5px;
+        color: white;
+        
+        text-align: center;
+        position: relative;
+        top: 80px;
+    }
+    .d h2{
+        margin-left: 5px;
+        margin-top: 20px;
+        font-size: 30px;
+        letter-spacing:5px;
+        color:red;
+        position: relative;
+        left:5px;
+        top: 80px;
+        text-align: center;
+    }
+    .your-picture{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        padding: 0;
+        margin: 0;
+        object-fit: cover;
+        position: absolute;
+        top:55% ;
+      left: 200px;
+        right: 10%;
+        /* bottom: 50%; */
+       border-color: #F8DE22;
+       border: 2px solid red;
+       box-shadow:20px;
+    }
+    button{
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 6px;
+        background: #472ae8;
+        transition: all 0.2s ease;
+        position: absolute;
+        left: 40%;
+        top: 88%;
+    }
+}
